@@ -1,0 +1,17 @@
+{
+    "githubWebhookSecret": "-----",
+    "telegramSecret": "-----",
+    "telegramChatId": 123456,
+    "projects": {
+        "github-repo-name": {
+            "dir": "directory to build",
+            "branch": "master",
+            "service": "to docker-compose up"
+        },
+        "other repo": {
+            "dir": "dir to build as static",
+            "branch": "feature/dev",
+            "static": true
+        }
+    }
+}

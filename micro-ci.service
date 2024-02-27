@@ -1,0 +1,12 @@
+[Unit]
+Description=micro-ci node.js
+After=network.target
+
+[Service]
+Type=simple
+User=web
+ExecStart=/home/web/.nvm/versions/node/v16.20.2/bin/node /home/web/micro_ci/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
